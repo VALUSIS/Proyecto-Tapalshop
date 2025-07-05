@@ -1,0 +1,13 @@
+body {
+    background-color: beige;
+}
+
+.nav--logo {
+    display: flex;
+}
+
+.div--logo {
+    height: 50px;   
+    width: auto;    
+    object-fit: contain;  
+}
