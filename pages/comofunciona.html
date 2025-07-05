@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Como funciona <strong>Ecoprecios Tapalqué</strong>?</title>
+    <title>¿Como funciona?</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="div--logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/comofunciona.html">¿Como funciona <strong>Ecoprecios Tapalqué</strong>?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agregar Productos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <main class="py-5">
     <div class="container">
-              <h1 class="display-5 fw-bold">EcoPrecios Tapalqué</h1>
-               <p class="lead">Una herramienta simple para ver y comparar los precios reales de productos en supermercados y almacenes de Tapalqué.</p>
-              <a href="productos.html" class="btn btn-primary btn-lg mt-3">Ver productos</a>
+      <h1 class="mb-4 text-center">¿Cómo funciona Ecoprecios Tapalqué?</h1>
+      <p class="lead text-center">
+        Ecoprecios Tapalqué es una herramienta colaborativa para que todos los vecinos puedan ver y comparar los precios reales de productos en supermercados y almacenes del pueblo.
+      </p>
+      <p class="text-center">
+        Cada persona puede ingresar a la web y cargar los precios que ve en los comercios. Estos precios se actualizan constantemente gracias a la participación de la comunidad. De esta manera, entre todos construimos una base de datos útil para saber dónde conviene comprar.
+      </p>
+      <p class="text-center fw-bold mt-4">
+        ¡Mientras más personas participan, más precisa es la información para todos!
+      </p>
     </div>
+  </main>
+  <div class="card h-100 shadow-sm p-3">
+  <div class="d-flex align-items-center mb-2">
+    <i class="bi bi-bag-fill fs-2 me-3"></i> <!-- ícono genérico -->
+    <h5 class="card-title mb-0">Yerba Amanda 1kg</h5>
+  </div>
+  <p class="card-text mb-1">💰 $2.300</p>
+  <p class="card-text text-muted mb-1">🛒 Supermercado Don José</p>
+  <p class="card-text text-muted small">📅 Actualizado: 5/07</p>
+</div>
+
+  <footer class="bg-light py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-2">¿Te gusta el proyecto? Podés apoyarlo con una donación voluntaria ❤️</p>
+      <a href="https://mpago.la/tu_link_aqui" class="btn btn-outline-success" target="_blank">Donar por Mercado Pago</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
