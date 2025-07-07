@@ -14,7 +14,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="../images/logo.png" class="div--logo"></a>
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="div--logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,8 +42,10 @@
     <div class="mb-4">
       <input type="text" id="buscador" class="form-control" placeholder="Buscar producto...">
     </div>
-
-
+    <div class="mb-4 text-center">
+      <p class="mb-2">¿No encontrás tu producto? ¡Agregalo vos mismo!</p>
+      <a href="agregar.html" class="btn btn-outline-success"><strong>Agregar Productos</strong></a>
+    </div>
     <div id="lista-productos">
       <div class="card mb-3">
   <div class="card-body">
@@ -74,6 +76,56 @@
               </p>
         </div>
      </footer>
+     <!-- Modal editar producto -->
+<div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form id="form-editar" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEditarLabel">Editar producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="edit-id">
+
+        <div class="mb-3">
+          <label for="edit-nombre" class="form-label">Nombre</label>
+          <input type="text" id="edit-nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="edit-marca" class="form-label">Marca</label>
+          <input type="text" id="edit-marca" class="form-control" required>
+        </div>
+
+        <div id="precios-existentes" class="mb-3">
+          <!-- Inputs de precios por supermercado se generan dinámicamente -->
+        </div>
+
+        <hr>
+
+        <h6>Agregar nuevo precio</h6>
+
+        <div class="mb-3">
+  <label for="nuevo-supermercado" class="form-label">Supermercado</label>
+  <select id="nuevo-supermercado" class="form-select">
+    <option value="">Seleccionar supermercado</option>
+    <!-- Las opciones se agregan dinámicamente con JS -->
+  </select>
+</div>
+
+        <div class="mb-3">
+          <label for="nuevo-precio" class="form-label">Precio</label>
+          <input type="number" id="nuevo-precio" class="form-control" min="0" step="0.01" placeholder="Precio">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
      <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
